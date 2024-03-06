@@ -13,6 +13,10 @@ This repository contains Python scripts for scraping and analyzing statistics fr
 2. **Team Preferences Script: `m5_world_championship_team_hero.py`**
     - This script extracts information from the last column of `m5_world_championship_stats.csv` to determine which teams played each hero during the tournament. The data is then stored in a separate CSV file (`m5_world_championship_hero_teams.csv`).
 
+## Scraping Process
+
+The scraping process involves sending HTTP requests to the [Liquipedia](https://liquipedia.net/mobilelegends/M5_World_Championship/Statistics) pages using the Python requests library. The BeautifulSoup library is then used to parse the HTML content and extract the relevant data from the tables. The scraped data is then processed and compiled into CSV files using the pandas library.
+
 ## Instructions
 
 ### Scraping Script
